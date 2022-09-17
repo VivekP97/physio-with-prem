@@ -1,0 +1,4 @@
+/* Styling for the navbar menu items */
+.navbar {
+  justify-content: flex-end;
+}
