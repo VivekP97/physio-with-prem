@@ -33,3 +33,9 @@
   height: 400px;
   border-radius: 7px;
 }
+
+/* ------------------------- ABOUT ------------------------------*/
+/* Styling for the whole About section */
+#about-section-container {
+  width: 50%;
+}
