@@ -1,3 +1,8 @@
+/* ------------------------- GENERAL ------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* ------------------------- NAVBAR ------------------------------*/
 /* Styling for the navbar container <div> */
 .navbar-container {
