@@ -8,6 +8,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/d5a5d2e7ec.js" crossorigin="anonymous"></script>
+
   <!-- Local styles -->
   <link rel="stylesheet" href="./css/main.css">
 
@@ -39,19 +42,24 @@
 
           <!-- Contact -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact-section-container">Contact</a>
           </li>
 
           <!-- Blog -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#blog-section-container">Blog</a>
+          </li>
+
+          <!-- Instagram -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fab fa-instagram fa-lg"></i></a>
           </li>
         </ul>
       </div>
     </nav>
   </div>
 
-  <!-- This <div> contains all the webpage content -->
+  <!-- This <div> contains all the webpage content after the navbar -->
   <div>
     <!----- HOME ----->
     <div id="home-section-container" class="d-flex justify-content-center p-5">
@@ -77,15 +85,55 @@
       </p>
     </div>
 
-    <!----- CONTACT ----->
-    <div>
+    <hr class="mt-4 ml-auto mr-auto" style="width: 60%"/>
 
+    <!----- CONTACT ----->
+    <div id="contact-section-container" class="ml-auto mr-auto mt-5 mb-5">
+      <h2 style="text-align: center">Contact Me</h2>
+      <h5 class="mb-4 text-muted" style="text-align: center">Take the first step on the road to recovery.</h5>
+
+      <form>
+        <div class="d-flex">
+          <!-- First name -->
+          <div class="form-group flex-grow-1 mr-2">
+            <label for="firstName">First name</label>
+            <input name="firstName" type="text" class="form-control" id="firstName">
+          </div>
+
+          <!-- Last name -->
+          <div class="form-group flex-grow-1 ml-2">
+            <label for="lastName">Last name</label>
+            <input name="lastName" type="text" class="form-control" id="lastName">
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <textarea name="message" class="form-control" rows="5" style="width: 100%" placeholder="How can I help you?"></textarea>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
+
+    <hr class="ml-auto mr-auto" style="width: 60%"/>
 
     <!----- BLOG ----->
-    <div>
-
+    <div id="blog-section-container" class="ml-auto mr-auto mt-5 mb-5">
+      <h2 style="text-align: center">My Research Blog</h2>
     </div>
+  </div>
+
+  <!----- FOOTER ----->
+  <div id="footer" class="mt-4">
+
   </div>
 
   <!-- Optional JavaScript -->

@@ -1,7 +1,14 @@
 /* ------------------------- GENERAL ------------------------------*/
+/* Make auto-scroll transitions smooth (when using navbar */
 html {
   scroll-behavior: smooth;
 }
+
+/* Common styling for all the sections after Home */
+#about-section-container, #contact-section-container, #blog-section-container {
+  width: 50%;
+}
+
 
 /* ------------------------- NAVBAR ------------------------------*/
 /* Styling for the navbar container <div> */
@@ -40,7 +47,13 @@ html {
 }
 
 /* ------------------------- ABOUT ------------------------------*/
-/* Styling for the whole About section */
-#about-section-container {
-  width: 50%;
+
+/* ------------------------- CONTACT ------------------------------*/
+
+/* ------------------------- CONTACT ------------------------------*/
+
+/* ------------------------- FOOTER ------------------------------*/
+/* Styling for the footer of the page */
+#footer {
+  background-color: #4287F5;
 }
