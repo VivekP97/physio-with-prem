@@ -4,11 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Common styling for all the sections after Home */
-#about-section-container, #contact-section-container, #blog-section-container {
-  width: 50%;
-}
-
 
 /* ------------------------- NAVBAR ------------------------------*/
 /* Styling for the navbar container <div> */

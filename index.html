@@ -69,7 +69,7 @@
 
           <!-- Instagram -->
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a class="nav-link" href="https://www.instagram.com/physiowithprem/"><i class="fab fa-instagram fa-lg"></i></a>
           </li>
         </ul>
       </div>
@@ -79,7 +79,7 @@
   <!-- This <div> contains all the webpage content after the navbar -->
   <div>
     <!----- HOME ----->
-    <div id="home-section-container" class="d-flex justify-content-center p-5">
+    <div id="home-section-container" class="col-12 d-flex justify-content-center p-5">
       <div class="mx-3">
         <img class="home-portrait" src="./img/stock-profile-pic.jpg"/>
       </div>
@@ -93,7 +93,7 @@
     </div>
 
     <!----- ABOUT ----->
-    <div id="about-section-container" class="ml-auto mr-auto mt-5">
+    <div id="about-section-container" class="col-12 col-md-6 ml-auto mr-auto mt-5">
       <h2 class="mb-4" style="text-align: center">About Me</h2>
       <p>
         You know how I do. I be fixing muscles and stretching mans out AND be getting paid for it. Hit up my receptionist to book a consult ASAP, you already know.
@@ -105,34 +105,38 @@
     <hr class="mt-4 ml-auto mr-auto" style="width: 60%"/>
 
     <!----- CONTACT ----->
-    <div class="ml-auto mr-auto mt-5 mb-5">
+    <div class="col-12 col-md-6 ml-auto mr-auto mt-5 mb-5">
       <h2 style="text-align: center">Contact Me</h2>
       <h5 class="mb-4 text-muted" style="text-align: center">Take the first step on the road to recovery.</h5>
 
       <form id="contact-form">
-        <div class="d-flex">
+        <div class="row">
           <!-- First name -->
-          <div class="form-group flex-grow-1 mr-2">
+          <div class="form-group col-12 col-md-6">
             <label for="firstName">First name</label>
             <input name="firstName" type="text" class="form-control" id="firstName" required>
           </div>
 
           <!-- Last name -->
-          <div class="form-group flex-grow-1 ml-2">
+          <div class="form-group col-12 col-md-6">
             <label for="lastName">Last name</label>
             <input name="lastName" type="text" class="form-control" id="lastName" required>
           </div>
         </div>
 
         <!-- Email -->
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+        <div class="row">
+          <div class="form-group col-12">
+            <label for="email">Email address</label>
+            <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+          </div>
         </div>
 
         <!-- Message -->
-        <div class="form-group">
-          <textarea name="message" class="form-control" rows="5" style="width: 100%" placeholder="How can I help you?"></textarea>
+        <div class="row">
+          <div class="form-group col-12">
+            <textarea name="message" class="form-control" rows="5" style="width: 100%" placeholder="How can I help you?"></textarea>
+          </div>
         </div>
 
 
@@ -143,7 +147,7 @@
     <hr class="ml-auto mr-auto" style="width: 60%"/>
 
     <!----- BLOG ----->
-    <div id="blog-section-container" class="ml-auto mr-auto mt-5 mb-5">
+    <div id="blog-section-container" class="col-12 col-md-6 ml-auto mr-auto mt-5 mb-5">
       <h2 style="text-align: center">My Research Blog</h2>
     </div>
   </div>
