@@ -4,11 +4,19 @@ html {
   scroll-behavior: smooth;
 }
 
+#about-section-container, #contact-section-container, #blog-section-container {
+  padding-top: 3.7rem;
+}
+
 
 /* ------------------------- NAVBAR ------------------------------*/
 /* Styling for the navbar container <div> */
 .navbar-container {
   background-color: #4287F5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 /* Styling for the navbar menu items */
