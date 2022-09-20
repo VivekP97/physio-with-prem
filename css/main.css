@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#about-section-container, #contact-section-container, #blog-section-container {
+#about-section-container, #booking-section-container, #blog-section-container, #contact-section-container {
   padding-top: 3.7rem;
 }
 
@@ -53,6 +53,13 @@ html {
 /* ------------------------- ABOUT ------------------------------*/
 
 /* ------------------------- CONTACT ------------------------------*/
+.contact-phone-number-link, .contact-email-link {
+  color: black;
+}
+
+.contact-phone-number-link:hover, .contact-email-link:hover {
+  text-decoration: none;
+}
 
 /* ------------------------- BLOG ------------------------------*/
 .blog-post-link:hover {
