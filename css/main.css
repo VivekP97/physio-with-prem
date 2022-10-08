@@ -54,7 +54,7 @@ html {
 
 /* ------------------------- CONTACT ------------------------------*/
 .contact-phone-number-link, .contact-email-link {
-  color: black;
+  /*color: black;*/
 }
 
 .contact-phone-number-link:hover, .contact-email-link:hover {
