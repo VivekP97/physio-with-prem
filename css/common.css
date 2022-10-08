@@ -1,0 +1,24 @@
+/* Make auto-scroll transitions smooth (when using navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------------------- NAVBAR ------------------------------*/
+/* Styling for the navbar container <div> */
+.navbar-container {
+  background-color: #4287F5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Styling for the navbar menu items */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* Styling for the navbar logo and links */
+.navbar-brand, .nav-link {
+  color: #FFF
+}
