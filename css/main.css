@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#about-section-container, #booking-section-container, #blog-section-container, #contact-section-container {
+#about-section-container, #appointments, #blog, #contact {
   padding-top: 3.7rem;
 }
 
@@ -31,7 +31,7 @@ html {
 
 /* ------------------------- HOME ------------------------------*/
 /* Styling for the whole Home section */
-#home-section-container {
+#home {
   background-color: #cbdcf7;
 }
 
