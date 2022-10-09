@@ -46,6 +46,11 @@ html {
   background: #EDEDED;
 }
 
+/*@media (max-width: 480px) {
+  font-size: 1em;
+  width: 100%;
+}*/
+
 /* Styling for the quotation mark placed before the blckquote in some blog posts. */
 .quoted-message::before {
   font-family: Arial;
