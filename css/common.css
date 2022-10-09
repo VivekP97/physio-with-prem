@@ -29,3 +29,30 @@ html {
   background-color: #4287F5;
   color: white;
 }
+
+/* ------------------------- BLOCK QUOTE ------------------------------*/
+/* Styling for the blockquote at the start of some of the blog posts. */
+.quoted-message {
+  font-size: 1.4em;
+  width: 60%;
+  margin: 50px auto;
+  font-family: Open Sans;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #4287F5 ;
+  line-height: 1.6;
+  position: relative;
+  background: #EDEDED;
+}
+
+/* Styling for the quotation mark placed before the blckquote in some blog posts. */
+.quoted-message::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #4287F5;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
