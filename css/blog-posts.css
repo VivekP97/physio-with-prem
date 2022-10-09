@@ -67,3 +67,24 @@ html {
 .subsection-title {
   font-weight: 600;
 }
+
+/* General styling for images in the blog posts (specifically, adding a border to images with no background/border) */
+.image-rounded-border {
+  border: 1px solid #4287F5;
+  border-radius: 8px;
+}
+
+/* -------------------- TENDINOPATHY --------------------- */
+.tendinopathy-rehab-stage {
+  flex-grow: 1;
+  max-width: 25%;
+}
+
+.tendinopathy-rehab-stage > .card-header {
+  color: white;
+  background-color: #4287F5;
+}
+
+.tendinopathy-rehab-stage > .card-body {
+  background-color: #def0ff;
+}
