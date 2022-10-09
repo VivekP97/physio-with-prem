@@ -56,3 +56,14 @@ html {
   left: 10px;
   top: -10px;
 }
+
+/* Styling for the highlighted text in blog posts */
+.highlighted-text {
+  font-weight: 500;
+  color: #4287F5;
+}
+
+/* Styling for the headers for subsections in the blog posts */
+.subsection-title {
+  font-weight: 600;
+}

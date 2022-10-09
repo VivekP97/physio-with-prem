@@ -5,12 +5,3 @@
 .page-container > div {
   /*background-color: white;*/
 }
-
-.highlighted-text {
-  font-weight: 500;
-  color: #4287F5;
-}
-
-.subsection-title {
-  font-weight: 600;
-}
