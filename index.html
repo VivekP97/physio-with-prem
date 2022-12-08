@@ -16,39 +16,6 @@
   <link rel="stylesheet" href="./css/common.css">
 
   <title>Physio With Prem</title>
-
-  <script type="text/javascript">
-    /*console.log("Validating form...");
-    // add a 'submit' event listener to the "Contact Me" form
-    let contactForm = document.getElementById("contact-form");
-    let submitButton = document.getElementById("submit-button");
-
-    submitButton.addEventListener('click', function (event) {
-        if (!contactForm.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-          contactForm.classList.add('was-validated')
-        }, false)
-     });*/
-
-    function openMailClient() {
-      // get the form info
-      let fName = document.getElementsByName("firstName")[0].value;
-      let lName = document.getElementsByName("lastName")[0].value;
-      let email = document.getElementsByName("email")[0].value;
-      let msg = document.getElementsByName("message")[0].value;
-      console.log(fName);
-      console.log(lName);
-      console.log(email);
-      console.log(msg);
-
-      // TODO: mailto prem's email, and put proper body
-      let mailToLink = "mailto:" + email + "?subject=HelloWorld&body=This isthebody";
-      window.open(mailToLink);
-    }
-  </script>
 </head>
 <body>
   <!-- The navbar at the top -->
@@ -208,51 +175,55 @@
       </div>
     </div>
   </div>
-  <br/>
 
   <hr class="mt-4 ml-auto mr-auto" style="width: 60%"/>
 
   <!----- CONTACT ----->
   <div id="contact" class="col-12 col-md-6 ml-auto mr-auto mb-5">
-    <h2 class="text-center mb-5">Have a question? Send me a message.</h2>
+<!--    <h2 class="text-center mb-5">Have a question? Send me a message.</h2>-->
 
-    <form id="contact-form" onsubmit="event.preventDefault()">
-      <div class="row">
-        <!-- First name -->
-        <div class="form-group col-12 col-md-6">
-          <label for="firstName">First name</label>
-          <input name="firstName" type="text" class="form-control" id="firstName" required>
-        </div>
+<!--    <form id="contact-form" onsubmit="event.preventDefault()">-->
+<!--      <div class="row">-->
+<!--        &lt;!&ndash; First name &ndash;&gt;-->
+<!--        <div class="form-group col-12 col-md-6">-->
+<!--          <label for="firstName">First name</label>-->
+<!--          <input name="firstName" type="text" class="form-control" id="firstName" required>-->
+<!--        </div>-->
 
-        <!-- Last name -->
-        <div class="form-group col-12 col-md-6">
-          <label for="lastName">Last name</label>
-          <input name="lastName" type="text" class="form-control" id="lastName" required>
-        </div>
-      </div>
+<!--        &lt;!&ndash; Last name &ndash;&gt;-->
+<!--        <div class="form-group col-12 col-md-6">-->
+<!--          <label for="lastName">Last name</label>-->
+<!--          <input name="lastName" type="text" class="form-control" id="lastName" required>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <!-- Email -->
-      <div class="row">
-        <div class="form-group col-12">
-          <label for="email">Email address</label>
-          <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
-        </div>
-      </div>
+<!--      &lt;!&ndash; Email &ndash;&gt;-->
+<!--      <div class="row">-->
+<!--        <div class="form-group col-12">-->
+<!--          <label for="email">Email address</label>-->
+<!--          <input name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp" required>-->
+<!--        </div>-->
+<!--      </div>-->
 
-      <!-- Message -->
-      <div class="row">
-        <div class="form-group col-12">
-          <textarea name="message" class="form-control" rows="5" style="width: 100%" placeholder="How can I help you?"></textarea>
-        </div>
-      </div>
-      
-      <button type="submit" class="btn btn-primary" onclick="openMailClient()">Submit</button>
-    </form>
+<!--      &lt;!&ndash; Message &ndash;&gt;-->
+<!--      <div class="row">-->
+<!--        <div class="form-group col-12">-->
+<!--          <textarea name="message" class="form-control" rows="5" style="width: 100%" placeholder="How can I help you?"></textarea>-->
+<!--        </div>-->
+<!--      </div>-->
 
-    <div class="mt-5">
-      <h4 class="text-center mb-3" style="font-weight: 600">Other ways to connect...</h4>
-      <h5 class="text-center">Call me at <a class="contact-phone-number-link font-weight-bold" href="tel:1-647-546-4693">(647) 924-4693</a></h5>
-      <h5 class="text-center">or email me at <a class="contact-email-link font-weight-bold" href="mailto:physiowithprem@gmail.com">physiowithprem@gmail.com</a></h5>
+<!--      <button type="submit" class="btn btn-primary" onclick="openMailClient()">Submit</button>-->
+<!--    </form>-->
+
+<!--    <div class="my-auto">-->
+<!--      <iframe src="https://physiowithprem.janeapp.com/#/staff_member/1/treatment/1" width="1000" height="800" title="Physio Schedule"></iframe>-->
+<!--    </div>-->
+
+    <div>
+      <h2 class="text-center">Book an appointment</h2>
+      <p class="text-center mt-4" style="font-size: 1.1em">View my <a href="https://physiowithprem.janeapp.com/#staff_member/1" target="_blank">schedule</a> and book your appointment today!</p>
+
+      <p class="text-center mt-4" style="font-size: 1.1em">Have a question? Send an email to <a class="contact-email-link font-weight-bold" href="mailto:physiowithprem@gmail.com">physiowithprem@gmail.com</a>.</p>
     </div>
   </div>
 
