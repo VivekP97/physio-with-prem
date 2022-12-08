@@ -32,6 +32,22 @@
           contactForm.classList.add('was-validated')
         }, false)
      });*/
+
+    function openMailClient() {
+      // get the form info
+      let fName = document.getElementsByName("firstName")[0].value;
+      let lName = document.getElementsByName("lastName")[0].value;
+      let email = document.getElementsByName("email")[0].value;
+      let msg = document.getElementsByName("message")[0].value;
+      console.log(fName);
+      console.log(lName);
+      console.log(email);
+      console.log(msg);
+
+      // TODO: mailto prem's email, and put proper body
+      let mailToLink = "mailto:" + email + "?subject=HelloWorld&body=This isthebody";
+      window.open(mailToLink);
+    }
   </script>
 </head>
 <body>
@@ -200,7 +216,7 @@
   <div id="contact" class="col-12 col-md-6 ml-auto mr-auto mb-5">
     <h2 class="text-center mb-5">Have a question? Send me a message.</h2>
 
-    <form id="contact-form">
+    <form id="contact-form" onsubmit="event.preventDefault()">
       <div class="row">
         <!-- First name -->
         <div class="form-group col-12 col-md-6">
@@ -230,13 +246,13 @@
         </div>
       </div>
       
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary" onclick="openMailClient()">Submit</button>
     </form>
 
     <div class="mt-5">
       <h4 class="text-center mb-3" style="font-weight: 600">Other ways to connect...</h4>
       <h5 class="text-center">Call me at <a class="contact-phone-number-link font-weight-bold" href="tel:1-647-546-4693">(647) 924-4693</a></h5>
-      <h5 class="text-center">or email me at <a class="contact-email-link font-weight-bold" href="mailto:premparmar007@hotmail.com">premparmar007@hotmail.com</a></h5>
+      <h5 class="text-center">or email me at <a class="contact-email-link font-weight-bold" href="mailto:physiowithprem@gmail.com">physiowithprem@gmail.com</a></h5>
     </div>
   </div>
 
@@ -260,7 +276,7 @@
       <div class="ml-2 mb-2">
         <a>
           <span style="display: inline-block; width: 2em"><i class="fa-regular fa-envelope fa-lg"></i></span>
-          <span>premparmar007@hotmail.com</span>
+          <span>physiowithprem@gmail.com</span>
         </a>
       </div>
       <div class="ml-2 mb-2">
