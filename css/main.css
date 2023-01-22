@@ -84,3 +84,12 @@ html {
   background-color: #4287F5;
   color: white;
 }
+
+/* ------------------------- IMAGE USE ATTRIBUTION ------------------------------*/
+.image-use-attribution {
+  background-color: #1d1d1d;
+  color: white;
+  font-weight: 300;
+  text-align: right;
+  font-size: 0.9em;
+}
