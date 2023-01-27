@@ -39,6 +39,7 @@ html {
   /*width: 400px;*/
   height: 400px;
   border-radius: 7px;
+  object-fit: cover;
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -57,7 +58,7 @@ html {
 /* Styling for the brief intro in the Home section */
 .home-intro {
   /*width: 500px;*/
-  /*max-width: 500px;*/
+  max-width: 50%
   height: 400px;
   border-radius: 7px;
 }
