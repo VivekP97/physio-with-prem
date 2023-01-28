@@ -4,7 +4,7 @@ html {
   scroll-behavior: smooth;
 }
 
-#about-section-container, #appointments, #blog, #contact {
+#about, #appointments, #blog, #contact {
   padding-top: 3.7rem;
 }
 
