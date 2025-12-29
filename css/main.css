@@ -4,8 +4,44 @@ html {
   scroll-behavior: smooth;
 }
 
-#about, #appointments, #blog, #contact {
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improved typography for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* Better spacing for paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+#about, #appointments, #blog, #contact, #booking {
   padding-top: 3.7rem;
+}
+
+/* Smooth fade-in animation for sections */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-fade-in {
+  animation: fadeInUp 0.6s ease-out;
 }
 
 /* ------------------------- NAVBAR ------------------------------*/
@@ -16,6 +52,12 @@ html {
   top: 0;
   width: 100%;
   z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.navbar-container:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* Styling for the navbar menu items */
@@ -24,22 +66,71 @@ html {
 }
 
 /* Styling for the navbar logo and links */
-.navbar-brand, .nav-link {
-  color: #FFF
+.navbar-brand {
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: #FFF;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 1rem !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #FFF;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: #FFF;
+  opacity: 0.9;
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Book Now button in navbar */
+.navbar .btn-dark {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #FFF;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+}
+
+.navbar .btn-dark:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ------------------------- HOME ------------------------------*/
 /* Styling for the whole Home section */
 #home {
   /*background-color: #cbdcf7;*/
+  animation: fadeInUp 0.8s ease-out;
 }
 
 /* Styling for the pic of Prem in the Home section */
 .home-portrait {
   /*width: 400px;*/
   height: 400px;
-  border-radius: 7px;
+  border-radius: 12px;
   object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 /* Styling for the pic of Prem in the Home section */
@@ -48,6 +139,7 @@ html {
   width: 100%;
   max-width: 530px;
   padding-top: 5em;
+  animation: fadeInUp 0.6s ease-out;
 }
 
 /* #### Mobile Phones Portrait #### */
@@ -55,6 +147,8 @@ html {
   /* Make the portrait photo fit inside the screen */
   .home-portrait {
     width: 100%;
+    height: auto;
+    max-height: 400px;
   }
 
   /* Make the Home text section wrap underneath */
@@ -63,32 +157,238 @@ html {
   }
 }
 
+/* General mobile responsiveness */
+@media (max-width: 768px) {
+  .home-portrait {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  .home-intro {
+    margin: 1rem 0.5rem;
+  }
+  
+  #about, #blog, #contact, #booking {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .blog-card {
+    margin-bottom: 1.5rem !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    max-width: 100%;
+  }
+}
+
 /* Styling for the brief intro in the Home section */
 .home-intro {
   /*width: 500px;*/
   border: none;
-  /*border-radius: 7px;*/
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
 /* ------------------------- ABOUT ------------------------------*/
+#about {
+  animation: fadeInUp 0.8s ease-out;
+  padding-bottom: 2rem;
+}
+
+#about h2 {
+  margin-bottom: 2rem;
+}
+
+#about p {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
 /* Styling for the highlighted text in blog posts */
 .blue-highlighted-text {
   font-weight: 500;
   color: #4287F5;
 }
 
+/* ------------------------- BOOKING SECTION ------------------------------*/
+#booking {
+  padding-top: 3.7rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.booking-container {
+  background: linear-gradient(135deg, #4287F5 0%, #5a9aff 100%);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  color: white;
+  box-shadow: 0 8px 32px rgba(66, 135, 245, 0.3);
+  margin: 2rem auto;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.booking-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(66, 135, 245, 0.4);
+}
+
+.booking-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.booking-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0.95;
+}
+
+.booking-button {
+  display: inline-block;
+  background-color: white;
+  color: #4287F5;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid white;
+}
+
+.booking-button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: #4287F5;
+  text-decoration: none;
+}
+
+.booking-button:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.booking-info {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.booking-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+
+/* Mobile booking section */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 2rem 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+  
+  .booking-title {
+    font-size: 2rem;
+  }
+  
+  .booking-subtitle {
+    font-size: 1rem;
+  }
+  
+  .booking-button {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  
+  .booking-icon {
+    font-size: 2.5rem;
+  }
+}
+
 /* ------------------------- CONTACT ------------------------------*/
+#contact {
+  animation: fadeInUp 0.8s ease-out;
+  padding-bottom: 2rem;
+}
+
+#contact h2 {
+  margin-bottom: 2rem;
+}
+
 .contact-phone-number-link, .contact-email-link {
-  /*color: black;*/
+  color: #4287F5;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .contact-phone-number-link:hover, .contact-email-link:hover {
   text-decoration: none;
+  color: #2d6fd1;
+  text-decoration: underline;
 }
 
 /* ------------------------- BLOG ------------------------------*/
+#blog {
+  animation: fadeInUp 0.8s ease-out;
+  padding-bottom: 2rem;
+}
+
+#blog h2 {
+  margin-bottom: 3rem;
+}
+
+.blog-card {
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.blog-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.blog-post-link {
+  transition: all 0.3s ease;
+  color: #4287F5;
+  font-weight: 500;
+}
+
 .blog-post-link:hover {
   text-decoration: none;
+  color: #2d6fd1;
+  transform: translateX(5px);
+}
+
+.blog-post-link i {
+  transition: transform 0.3s ease;
+}
+
+.blog-post-link:hover i {
+  transform: translateX(5px);
 }
 
 /* ------------------------- FOOTER ------------------------------*/
@@ -96,6 +396,37 @@ html {
 #footer {
   background-color: #4287F5;
   color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+#footer a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateX(5px);
+  text-decoration: none;
+}
+
+#footer i {
+  transition: transform 0.3s ease;
+}
+
+#footer a:hover i {
+  transform: scale(1.2);
+}
+
+/* ------------------------- HORIZONTAL RULES ------------------------------*/
+hr {
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #4287F5, transparent);
+  margin: 3rem auto;
+  opacity: 0.3;
 }
 
 /* ------------------------- IMAGE USE ATTRIBUTION ------------------------------*/
@@ -105,4 +436,5 @@ html {
   font-weight: 300;
   text-align: right;
   font-size: 0.9em;
+  padding: 0.5rem 1rem;
 }
