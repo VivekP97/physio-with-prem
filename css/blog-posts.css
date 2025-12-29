@@ -23,6 +23,50 @@ html {
   color: #FFF
 }
 
+/* ------------------------- BACK BUTTON ------------------------------*/
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  color: #4287F5;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  margin: 0 0 1rem 0;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.back-button:hover {
+  color: #2d6fd1;
+  text-decoration: none;
+  transform: translateX(-3px);
+  opacity: 1;
+}
+
+.back-button i {
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.back-button:hover i {
+  transform: translateX(-3px);
+}
+
+.back-button-container {
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 0.85rem;
+  }
+}
+
 /* ------------------------- FOOTER ------------------------------*/
 /* Styling for the footer of the page */
 #footer {
