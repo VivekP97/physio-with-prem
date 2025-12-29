@@ -67,6 +67,27 @@ html {
   }
 }
 
+/* ------------------------- BLOG POST HEADER ------------------------------*/
+.blog-header-section {
+  padding-top: 6em;
+}
+
+@media (max-width: 768px) {
+  .blog-header-section {
+    padding-top: 5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header-section {
+    padding-top: 4.5em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
 /* ------------------------- FOOTER ------------------------------*/
 /* Styling for the footer of the page */
 #footer {
@@ -74,33 +95,148 @@ html {
   color: white;
 }
 
+/* ------------------------- BLOG POST TITLE ------------------------------*/
+.blog-post-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .blog-post-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-post-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ------------------------- BLOG POST CONTENT ------------------------------*/
+.page-container {
+  font-size: 1rem;
+}
+
+.page-container .col-12.col-md-8 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    font-size: 0.95rem;
+  }
+  
+  .page-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .page-container h5 {
+    font-size: 1.25rem;
+  }
+  
+  .page-container .col-12.col-md-8 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .page-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-container {
+    font-size: 0.9rem;
+  }
+  
+  .page-container p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .page-container h5 {
+    font-size: 1.15rem;
+  }
+  
+  .page-container .col-12.col-md-8 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .page-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .page-container .alert {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
+
 /* ------------------------- BLOCK QUOTE ------------------------------*/
 /* Styling for the blockquote at the start of some of the blog posts. */
 .quoted-message {
-  font-size: 1.4em;
-  width: 60%;
-  margin: 50px auto;
+  font-size: 1.2rem;
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
   font-family: Open Sans;
   font-style: italic;
   color: #555555;
-  padding: 1.2em 30px 1.2em 75px;
-  border-left: 8px solid #4287F5 ;
+  padding: 1.2em 20px 1.2em 60px;
+  border-left: 8px solid #4287F5;
   line-height: 1.6;
   position: relative;
   background: #EDEDED;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-/*@media (max-width: 480px) {
-  font-size: 1em;
-  width: 100%;
-}*/
+@media (max-width: 768px) {
+  .quoted-message {
+    font-size: 1rem;
+    width: 95%;
+    padding: 1em 15px 1em 50px;
+    margin: 20px auto;
+  }
+  
+  .quoted-message::before {
+    font-size: 3em;
+    left: 8px;
+    top: -5px;
+  }
+}
 
-/* Styling for the quotation mark placed before the blckquote in some blog posts. */
+@media (max-width: 480px) {
+  .quoted-message {
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 0.9em 12px 0.9em 45px;
+    margin: 15px auto;
+    border-left: 6px solid #4287F5;
+  }
+  
+  .quoted-message::before {
+    font-size: 2.5em;
+    left: 5px;
+    top: -3px;
+  }
+}
+
+/* Styling for the quotation mark placed before the blockquote in some blog posts. */
 .quoted-message::before {
   font-family: Arial;
   content: "\201C";
   color: #4287F5;
-  font-size: 4em;
+  font-size: 3.5em;
   position: absolute;
   left: 10px;
   top: -10px;
